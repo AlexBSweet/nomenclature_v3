@@ -1,0 +1,42 @@
+.el{
+  font-variation-settings: 'wght' 100, 'slnt' 0;
+}
+.l{
+  font-variation-settings: 'wght' 300, 'slnt' 0;
+}
+.reg{
+  font-variation-settings: 'wght' 400, 'slnt' 0;
+}
+.med{
+  font-variation-settings: 'wght' 500, 'slnt' 0;
+}
+.sb{
+  font-variation-settings: 'wght' 600, 'slnt' 0;
+}
+.b{
+  font-variation-settings: 'wght' 700, 'slnt' 0;
+}
+.bl{
+  font-variation-settings: 'wght' 800, 'slnt' 0;
+}
+.el-i{
+  font-variation-settings: 'wght' 100, 'slnt' 1;
+}
+.l-i{
+  font-variation-settings: 'wght' 300, 'slnt' 1;
+}
+.reg-i{
+  font-variation-settings: 'wght' 400, 'slnt' 1;
+}
+.med-i{
+  font-variation-settings: 'wght' 500, 'slnt' 1;
+}
+.sb-i{
+  font-variation-settings: 'wght' 600, 'slnt' 1;
+}
+.b-i{
+  font-variation-settings: 'wght' 700, 'slnt' 1;
+}
+.bl-i{
+  font-variation-settings: 'wght' 800, 'slnt' 1;
+}
