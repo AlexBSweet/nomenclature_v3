@@ -1,12 +1,91 @@
+
+/* INTRO SANS ===================================================== */
 @font-face{
   font-family: Intro;
-  src: url(../fonts/Introv2.0GX.ttf);
+  src: url(../fonts/intro/Introv2.0GX.ttf);
 }
+
+/* INTRO MONO ===================================================== */
 @font-face{
   font-family: Intro Mono;
-  src: url(../fonts/Intro-Monov1.01GX.ttf);
+  src: url(../fonts/intro-mono/Intro-Monov1.01GX.ttf);
+}
+
+/*  SOLILIA  ===================================================== */
+/*  TEXT  ===================================================== */
+@font-face{
+  font-family: Solilia Text Light;
+  src:url(../fonts/solilia/text/SoliliaTextv0.1-LightText.otf)
 }
 @font-face{
-  font-family: Solilia;
-  src:url(../fonts/SoliliaTest-Extra-Light.otf)
+  font-family: Solilia Text Regular;
+  src:url(../fonts/solilia/text/SoliliaTextv0.1-RegularText.otf)
+}
+@font-face{
+  font-family: Solilia Text Medium;
+  src:url(../fonts/solilia/text/SoliliaTextv0.1-MediumText.otf)
+}
+@font-face{
+  font-family: Solilia Text Semi-Bold;
+  src:url(../fonts/solilia/text/SoliliaTextv0.1-Semi-Boldtext.otf)
+}
+@font-face{
+  font-family: Solilia Text Bold;
+  src:url(../fonts/solilia/text/SoliliaTextv0.1-BoldText.otf)
+}
+/*  DISPLAY  ===================================================== */
+@font-face{
+  font-family: Solilia Display Thin;
+  src:url(../fonts/solilia/display/SoliliaTest2-Thin.otf)
+}
+@font-face{
+  font-family: Solilia Display Extra-Light;
+  src:url(../fonts/solilia/display/SoliliaTest2-Extra-Light.otf)
+}
+@font-face{
+  font-family: Solilia Display Light;
+  src:url(../fonts/solilia/display/SoliliaTest2-Light.otf)
+}
+@font-face{
+  font-family: Solilia Display Regular;
+  src:url(../fonts/solilia/display/SoliliaTest2-Regular.otf)
+}
+@font-face{
+  font-family: Solilia Display Medium;
+  src:url(../fonts/solilia/display/SoliliaTest2-Medium.otf)
+}
+@font-face{
+  font-family: Solilia Display Semi-Bold;
+  src:url(../fonts/solilia/display/SoliliaTest2-Semi-Bold.otf)
+}
+@font-face{
+  font-family: Solilia Display Bold;
+  src:url(../fonts/solilia/display/SoliliaTest2-Bold.otf)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mono-small{
+  font-size:12px;
+  font-family: Intro Mono;
+  font-variation-settings: 'wght' 300, 'slnt' 0;
+  color:var(--gray);
 }

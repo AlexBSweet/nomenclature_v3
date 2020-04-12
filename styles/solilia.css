@@ -1,0 +1,44 @@
+.sd-t{
+  font-family: Solilia Display Thin;
+}
+.sd-el{
+  font-family: Solilia Display Extra-Light;
+}
+.sd-l{
+  font-family: Solilia Display Light;
+}
+.sd-r{
+  font-family: Solilia Display Regular;
+}
+.sd-m{
+  font-family: Solilia Display Medium;
+}
+.sd-sb{
+  font-family: Solilia Display Semi-Bold;
+}
+.sd-b{
+  font-family: Solilia Display Bold;
+}
+.st-l{
+  font-family: Solilia Text Light;
+}
+.st-r{
+  font-family: Solilia Text Regular;
+}
+.st-m{
+  font-family: Solilia Text Medium;
+}
+.st-sb{
+  font-family: Solilia Text Semi-Bold;
+}
+.st-b{
+  font-family: Solilia Text Bold;
+}
+
+
+
+
+div.style p{
+  font-size: 160px;
+  margin:0;
+}

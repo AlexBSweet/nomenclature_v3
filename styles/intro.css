@@ -40,3 +40,10 @@
 .bl-i{
   font-variation-settings: 'wght' 800, 'slnt' 1;
 }
+
+
+
+div.style p{
+  font-size: 200px;
+  margin:0;
+}

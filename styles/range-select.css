@@ -137,3 +137,10 @@ input[type=range]:focus::-ms-fill-upper {
 select.body-select{
   margin-bottom:15px;
 }
+
+
+.tester-select{
+  color:var(--gray);
+  border-color:var(--gray);
+  background-image: url('../assets/arrow-black.svg');
+}

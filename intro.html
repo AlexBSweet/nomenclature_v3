@@ -10,44 +10,62 @@
   <body>
 
     <header class="tf-header">
-      <div class="tf-header-left">
-       <a class="back-icon" href="index.html" ></a>
-      </div>
-      <div class="tf-header-right">
-          <p class="tf-title">
-            Intro Sans
-          </p>
-          <a class="next"></a>
-      </div>
+
+      <div class="sections-list">
+        <a href="index.html" class="back-icon"></a>
+              <div class="sections-link gallery-link">
+                <a class="gallery">Gallery</a>
+              </div>
+            <div class="sections-link styles-link">
+              <a class="styles">Styles</a>
+            </div>
+            <div class="sections-link samples-link">
+              <a class="samples">Samples</a>
+            </div>
+              <div class="sections-link glyphs-link">
+                <a class="glyphs">Glyphs</a>
+              </div>
+              <div class="sections-link tester-link">
+                <a class="tester">Try</a>
+              </div>
+              <div class="sections-link info-link">
+                <a class="info">Info</a>
+              </div>
+            <div class="sections-link buy-link">
+              <a class="buy">Buy</a>
+            </div>
+            <div class="active-section"></div>
+        </div>
+        <div class="header-right">
+          <div class="bw-toggle"></div>
+        </div>
     </header>
 
     <main class="tf-main">
-      <section class="tf-left sections">
-        <ul class="sections-list">
-          <li class="gallery"><div class="select"></div>Gallery</li>
-          <li class="styles"><div class="select"></div>Styles</li>
-          <li class="samples"><div class="select"></div> Samples </li>
-          <li class="glyphs"><div class="select"></div>Glyphs</li>
-          <li class="tester"><div class="select"></div>Tester</li>
-          <li class="info"><div class="select"></div>Info</li>
-          <li class="buy"><div class="select"></div>Buy</li>
-        </ul>
-        <div class="bw-toggle"></div>
-      </section>
+    
 
 
-      <section class="tf-right content">
+      <section class="content">
 
-
-
-            <section class="gallery">
-              <section class="gallery-inner">
-                <img src="assets/4.jpg">
-              </section>
+            <section class="main gallery">
+ 
+              <div class="slider">
+                <div class="slide active slide-one"></div>
+                <div class="slide slide-two"></div>
+                <div class="slide slide-three"></div>
+                <div class="slide slide-four"></div>
+                <div class="slide slide-five"></div>
+              </div>
+              <div class="gallery-cursor">
+                <img src="assets/large-arrow-black.png">
+              </div>
+              <div class="gallery-controls previous" id="previous">
+              </div>
+              <div class="gallery-controls next" id="next">
+              </div>
             </section>
 
-
-            <section class="styles">
+            <section class="main styles">
 
                 <div class="style">
                   <span>100</span>
@@ -103,18 +121,11 @@
                 </div>
                 <div class="style">
                   <span>800</span>
-                  <p class="b-i">Black Italic</p>
+                  <p class="bl-i">Black Italic</p>
                 </div>
             </section>
         
-
-
-            <section class="samples">
-             <div class="samples-header">
-               <div class="samples-lrg"> <p>Large</p></div>
-               <div class="samples-med">  <p>Medium</p></div>
-               <div class="samples-sml">  <p>Small</p></div>
-             </div>
+            <section class="main samples">
 
 
              <div class="samples-container">
@@ -124,15 +135,15 @@
                 <div class="sample-options">
                   <div class="sample-options-left">
                     <div class="option typesize">
-                      <label>Size<span class="size-output">253px</span></label>
+                      <label class="mono-small">Size<span class="size-output">253px</span></label>
                       <input name="typesize" type='range' value=253 min=12 max=400>
                     </div>
                     <div class="option weight">
-                      <label>Weight<span class="weight-output">100</span></label>
+                      <label  class="mono-small">Weight<span class="weight-output">100</span></label>
                       <input  name="weight" type='range' value=100 min=100 max=800>
                     </div>
                       <div class="option slant">
-                        <label>Slant<span class="slant-output">0</span></label>
+                        <label  class="mono-small">Slant<span class="slant-output">0</span></label>
                       <input name="slant" type='range' value=0 min=0 max=1 step=0.01>
                     </div>
                   </div>
@@ -156,26 +167,26 @@
                   </div>
              
                 </div>
-                <p class="sample-text full-width" contenteditable="true" spellcheck="false">
+                <p class="sample-text sample-large full-width el" >
                   Metronomical
                 </p>
               </div>
             
           
              
-            <div class="sample sample-one">
+            <div class="sample sample-two">
               <div class="sample-options">
                 <div class="sample-options-left">
                   <div class="option typesize">
-                    <label>Size<span class="size-output">253px</span></label>
+                    <label  class="mono-small">Size<span class="size-output">253px</span></label>
                     <input name="typesize" type='range' value=253 min=12 max=400>
                   </div>
                   <div class="option weight">
-                    <label>Weight<span class="weight-output">100</span></label>
-                    <input  name="weight" type='range' value=100 min=100 max=800>
+                    <label  class="mono-small">Weight<span class="weight-output">300</span></label>
+                    <input  name="weight" type='range' value=300 min=100 max=800>
                   </div>
                     <div class="option slant">
-                      <label>Slant<span class="slant-output">0</span></label>
+                      <label  class="mono-small">Slant<span class="slant-output">0</span></label>
                     <input name="slant" type='range' value=0 min=0 max=1 step=0.01>
                   </div>
                 </div>
@@ -199,26 +210,26 @@
                 </div>
            
               </div>
-              <p class="sample-text full-width" contenteditable="true" spellcheck="false">
+              <p class="sample-text sample-large full-width l" >
                 Salubrious
               </p>
             </div>
           
        
 
-          <div class="sample sample-one">
+          <div class="sample sample-three">
             <div class="sample-options">
               <div class="sample-options-left">
                 <div class="option typesize">
-                  <label>Size<span class="size-output">253px</span></label>
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
                   <input name="typesize" type='range' value=253 min=12 max=400>
                 </div>
                 <div class="option weight">
-                  <label>Weight<span class="weight-output">100</span></label>
-                  <input  name="weight" type='range' value=100 min=100 max=800>
+                  <label  class="mono-small">Weight<span class="weight-output">400</span></label>
+                  <input  name="weight" type='range' value=400 min=100 max=800>
                 </div>
                   <div class="option slant">
-                    <label>Slant<span class="slant-output">0</span></label>
+                    <label  class="mono-small">Slant<span class="slant-output">0</span></label>
                   <input name="slant" type='range' value=0 min=0 max=1 step=0.01>
                 </div>
               </div>
@@ -242,23 +253,30 @@
               </div>
          
             </div>
-            <p class="sample-text full-width" contenteditable="true" spellcheck="false">
+            <p class="sample-text sample-large full-width reg" >
               Tryptophonically
             </p>
           </div>
-        
-        </div>
-      </div>
-
-            </section>
-
-            <section class="glyphs">
 
 
-              <div class="glyphs-left">
-
-
-                <!-- <select class="select-css custom-select">
+          <div class="sample sample-four">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">500</span></label>
+                  <input  name="weight" type='range' value=500 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">0</span></label>
+                  <input name="slant" type='range' value=0 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
                   <option selected="selected">Extra-Light</option>
                   <option>Extra-Light Italic</option>
                   <option>Light</option>
@@ -274,31 +292,762 @@
                   <option>Black</option>
                   <option>Black Italic</option>
                 </select>
- -->
-
-                <div class="active-glyph-container">
-                  <p>A</p>
-                  <div class="metrics x-height"></div>
-                  <div class="metrics baseline"></div>
-                  <div class="metrics cap-height"></div>
-                </div>
-                <div class="glyph-details-container">
-                  <div>
-                    <p>Glyph Name</p>
-                    <div class="glyph-details glyph-details-one">Uppercase A</div>
-                </div>
-                <div>
-                  <p>Unicode Value</p>
-                  <div class="glyph-details glyph-details-two">U+0041</div>
-                </div>
-                <div>
-                  <p>HTML Entity</p>
-                  <div class="glyph-details glyph-details-three"><xmp>HTML</xmp></div>
-                </div>
-                </div>
-
               </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width med" >
+              Tryptophonically
+            </p>
+          </div>
 
+
+          <div class="sample sample-five">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">600</span></label>
+                  <input  name="weight" type='range' value=600 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">0</span></label>
+                  <input name="slant" type='range' value=0 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width sb" >
+              Tryptophonically
+            </p>
+          </div>
+
+
+          <div class="sample sample-six">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">700</span></label>
+                  <input  name="weight" type='range' value=700 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">0</span></label>
+                  <input name="slant" type='range' value=0 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width b" >
+              Tryptophonically
+            </p>
+          </div>
+
+
+          <div class="sample sample-seven">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">800</span></label>
+                  <input  name="weight" type='range' value=800 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">0</span></label>
+                  <input name="slant" type='range' value=0 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width bl" >
+              Tryptophonically
+            </p>
+          </div>
+
+
+          <div class="sample sample-eight">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">100</span></label>
+                  <input  name="weight" type='range' value=100 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width el-i" >
+             Definitely
+            </p>
+          </div>
+
+
+          <div class="sample sample-nine">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">300</span></label>
+                  <input  name="weight" type='range' value=300 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width l-i" >
+              Tryptophonically
+            </p>
+          </div>
+
+
+          <div class="sample sample-ten">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">400</span></label>
+                  <input  name="weight" type='range' value=400 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width reg-i" >
+              Tryptophonically
+            </p>
+          </div>
+
+
+
+          <div class="sample sample-eleven">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">500</span></label>
+                  <input  name="weight" type='range' value=500 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width med-i" >
+              Tryptophonically
+            </p>
+          </div>
+
+
+          <div class="sample sample-twelve">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">600</span></label>
+                  <input  name="weight" type='range' value=600 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width sb-i" >
+              Tryptophonically
+            </p>
+          </div>
+
+
+          <div class="sample sample-thirteen">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">700</span></label>
+                  <input  name="weight" type='range' value=700 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width b-i" >
+              Tryptophonically
+            </p>
+          </div>
+
+
+          <div class="sample sample-fourteen">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">800</span></label>
+                  <input  name="weight" type='range' value=800 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-large full-width bl-i" >
+              Tryptophonically
+            </p>
+          </div>
+
+
+
+          <div class="sample sample-fifteen">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">100</span></label>
+                  <input  name="weight" type='range' value=100 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-med full-width el-i" >
+              A graphic equilibrium had to be reached, the crew was at a loss
+            </p>
+          </div>
+
+
+
+          <div class="sample sample-sixteen">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">100</span></label>
+                  <input  name="weight" type='range' value=100 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-med full-width el-i" >
+              Precious objects, made to fail
+            </p>
+          </div>
+
+
+          <div class="sample sample-seventeen">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">100</span></label>
+                  <input  name="weight" type='range' value=100 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-med full-width el-i" >
+              Fallacious solipsism, aiming towards self-righteous destruction 
+            </p>
+          </div>
+
+
+          <div class="sample sample-eighteen">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">100</span></label>
+                  <input  name="weight" type='range' value=100 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-med full-width el-i" >
+             Generally it seemed not worth a second thought, after all what could be done? 
+            </p>
+          </div>
+
+          <div class="sample sample-nineteen">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">100</span></label>
+                  <input  name="weight" type='range' value=100 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-med full-width el-i" >
+              Precious platitudes underly their every move, but you had to respect their tenacity
+            </p>
+          </div>
+
+          <div class="sample sample-seventeen">
+            <div class="sample-options">
+              <div class="sample-options-left">
+                <div class="option typesize">
+                  <label  class="mono-small">Size<span class="size-output">253px</span></label>
+                  <input name="typesize" type='range' value=253 min=12 max=400>
+                </div>
+                <div class="option weight">
+                  <label  class="mono-small">Weight<span class="weight-output">100</span></label>
+                  <input  name="weight" type='range' value=100 min=100 max=800>
+                </div>
+                  <div class="option slant">
+                    <label  class="mono-small">Slant<span class="slant-output">1</span></label>
+                  <input name="slant" type='range' value=1 min=0 max=1 step=0.01>
+                </div>
+              </div>
+              <div class="option">
+                <select class="select-css custom-select">
+                  <option selected="selected">Extra-Light</option>
+                  <option>Extra-Light Italic</option>
+                  <option>Light</option>
+                  <option>Light Italic</option>
+                  <option>Regular</option>
+                  <option>Regular Italic</option>
+                  <option>Medium</option>
+                  <option>Medium Italic</option>
+                  <option>Semi-Bold</option>
+                  <option>Semi-Bold Italic</option>
+                  <option>Bold</option>
+                  <option>Bold Italic</option>
+                  <option>Black</option>
+                  <option>Black Italic</option>
+                </select>
+              </div>
+         
+            </div>
+            <p class="sample-text sample-med full-width el-i" >
+              Surely there was more to it...nobody drops out with that little thought. 
+            </p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+      </div>
+
+            </section>
+
+            <section class="main glyphs">
+
+
+              <div class="glyphs-left">
+                <div>
+                      <ul class="style-list glyphs-style-list mono-small">
+                        <li>Extra-Light</li>
+                        <li>Light</li>
+                        <li>Regular</li>
+                        <li class="active">Medium</li>
+                        <li>Semi-Bold</li>
+                        <li>Bold</li>
+                        <li>Black</li>
+                        <li>Extra-Light Italic</li>
+                        <li>Light Italic</li>
+                        <li>Regular Italic</li>
+                        <li>Medium Italic</li>
+                        <li>Semi-Bold Italic</li>
+                        <li>Bold Italic</li>
+                        <li>Black Italic</li>
+                      </ul>
+                </div>
+
+                <div>
+
+                      <p class="glyphs-section-title">Glyphs (530)</p>
+                      <div class="active-glyph-container">
+                        <p>A</p>
+                        <div class="metrics x-height"></div>
+                        <div class="metrics baseline"></div>
+                        <div class="metrics cap-height"></div>
+                        <div class="metrics descender"></div>
+                      </div>
+                      <div class="glyph-details-container">
+                        <div>
+                          <p class="mono-small">Glyph Name</p>
+                          <div class="glyph-details glyph-details-one">Uppercase A</div>
+                      </div>
+                      <div>
+                        <p class="mono-small">Unicode Value</p>
+                        <div class="glyph-details glyph-details-two">U+0041</div>
+                      </div>
+                      <div>
+                        <p class="mono-small">HTML Entity</p>
+                        <div class="glyph-details glyph-details-three"><xmp>HTML</xmp></div>
+                      </div>
+                      </div>
+
+                    </div>
+            </div>
 
 
       
@@ -307,7 +1056,7 @@
     
                   <div class="glyphs-container">
                     <section class="glyphs-category glyphs-uppercase">
-                      <p>Uppercase</p>
+                      <p class="mono-small">Uppercase</p>
                       <div data-name="Uppercase A">A</div>
                       <div data-name="Uppercase B">B</div>
                       <div data-name="Uppercase C">C</div>
@@ -337,7 +1086,7 @@
                     </section>
           
                     <section class="glyphs-category glyphs-lowercase">
-                      <p>Lowercase</p>
+                      <p class="mono-small">Lowercase</p>
                       <div data-name="Lowercase a">a</div>
                       <div data-name="Lowercase b">b</div>
                       <div data-name="Lowercase c">c</div>
@@ -367,7 +1116,7 @@
                     </section>
           
                     <section class="glyphs-category glyphs-ligatures">
-                      <p>Ligatures</p>
+                      <p class="mono-small">Ligatures</p>
                       <div data-name="Lowercase ff Ligature">ff</div>
                       <div data-name="Lowercase fi Ligature">fi</div>
                       <div data-name="Lowercase fl Ligature">fl</div>
@@ -378,7 +1127,7 @@
           
           
                     <section class="glyphs-category glyphs-latin-extended-uppercase">
-                      <p>Uppercase Latin Extended</p>
+                      <p class="mono-small">Uppercase Latin Extended</p>
             <!-- UPPERCASE DIACRITICS -->   
                     <!-- UPPERCASE A's -->
                     <div data-name="Uppercase A with Circumflex">&#194;</div> 
@@ -493,7 +1242,7 @@
           
           
             <section class="glyphs-category glyphs-latin-extended-lowercase">
-              <p>Lowercase Latin Extended</p>
+              <p class="mono-small">Lowercase Latin Extended</p>
                     <!-- a -->
                     <div data-name="Lowercase a with Grave">&#224;</div>
                     <div data-name="Lowercase a with Acute">&#225;</div>
@@ -615,7 +1364,7 @@
                  </section>
           
                  <section class="glyphs-category glyphs-diacritics">
-                  <p>Diacritical Marks</p>
+                  <p class="mono-small">Diacritical Marks</p>
                   <div data-name="Ring Above">˚</div>
                   <div data-name="Dot Above">˙</div>
                   <div data-name="Grave Accent">`</div>
@@ -632,7 +1381,7 @@
                 </section>
           
                 <section class="glyphs-category glyphs-punctuation">
-                  <p>Punctuation</p>
+                  <p class="mono-small">Punctuation</p>
                   <div data-name="Period">.</div>
                   <div data-name="Comma">,</div>
                     <div data-name="Colon">:</div>
@@ -671,7 +1420,7 @@
                 </section>
           
                 <section class="glyphs-category glyphs-symbols">
-                  <p>Symbols</p>
+                  <p class="mono-small">Symbols</p>
                   <div data-name="Ampersand">&#38;</div>
                   <div data-name="Commercial At Symbol">&#64;</div>
                   <!--SECTION SYMBOL <div>&#167;</div> -->
@@ -684,7 +1433,7 @@
                 </section>
           
                 <section class="glyphs-category glyphs-currency">
-                  <p>Currency Symbols</p>
+                  <p class="mono-small">Currency Symbols</p>
                   <div data-name="Dollar Sign">$</div>
                   <div data-name="Cent Sign">¢</div>
                   <div data-name="Currency Sign">&#164;</div>
@@ -703,7 +1452,7 @@
                 </section>
             
                   <section class="glyphs-category glyphs-numbers">
-                    <p>Numerals</p>
+                    <p class="mono-small">Numerals</p>
                       <div data-name="One">1</div>
                         <div data-name="Two">2</div>
                         <div data-name="Three">3</div>
@@ -717,7 +1466,7 @@
                   </section>
                     
                     <section class="glyphs-category glyphs-superscript">
-                      <p>Superscript Numerals</p>
+                      <p class="mono-small">Superscript Numerals</p>
                       <div data-name="Superscript Zero">⁰</div>
                       <div data-name="Superscript One">¹</div>
                       <div data-name="Superscript Two">²</div>
@@ -732,7 +1481,7 @@
           
           
                     <section class="glyphs-category glyphs-subscript">
-                      <p>Subscript Numerals</p>
+                      <p class="mono-small">Subscript Numerals</p>
                       <div data-name="Subscript Zero">₀</div>
                       <div data-name="Subscript One">₁</div>
                       <div data-name="Subscript Two">₂</div>
@@ -746,7 +1495,7 @@
                     </section>
           
                     <section class="glyphs-category glyphs-fractions">
-                      <p>Fractions</p>
+                      <p class="mono-small">Fractions</p>
                       <div data-name="One Quarter Fraction">&#188;</div>
                       <div data-name="One Half Fraction">&#189;</div>
                       <div data-name="Three Quarters Fraction">&#190;</div>
@@ -769,7 +1518,7 @@
                     </section>
           
                     <section class="glyphs-category glyphs-circled-numbers">
-                      <p>Circled Numbers</p>
+                      <p class="mono-small">Circled Numbers</p>
                       <div data-name="Negative Circled Digit One">❶</div>
                       <div data-name="Negative Circled Digit Two">❷</div>
                       <div data-name="Negative Circled Digit Three">❸</div>
@@ -791,7 +1540,7 @@
                     </section>
           
                     <section class="glyphs-category glyphs-mathematical">
-                      <p>Mathematical Symbols</p>
+                      <p class="mono-small">Mathematical Symbols</p>
                       <div data-name="Circumflex Accent">&#94;</div>
                       <div data-name="Vertical Line">&#124;</div>
                       <div data-name="Broken Bar">&#166;</div>
@@ -824,7 +1573,7 @@
                     </section>
                     <div class="glyphs-start section-start"></div>
                     <section class="glyphs-category glyphs-arrows">
-                      <p>Arrows</p>
+                      <p class="mono-small">Arrows</p>
                       <div data-name="Left Right Arrow">&#x2194;</div>
                       <div data-name="Up Down Arrow">&#x2195;</div>
                       <div data-name="Northwest Arrow">&#x2196;</div>
@@ -842,20 +1591,72 @@
 
             </section>
 
-            <section class="tester">
-              tester
+            <section class="main tester">
+
+              <div class="tester-content">
+
+                <div class="tester-options">
+
+                      <div class="tester-option typesize">
+                        <label class="mono-small">Size<span class="size-output">200px</span></label>
+                        <input name="typesize" type='range' value=200 min=12 max=400>
+                      </div>
+                      <div class="tester-option weight">
+                        <label  class="mono-small">Weight<span class="weight-output">300</span></label>
+                        <input  name="weight" type='range' value=300 min=100 max=800>
+                      </div>
+                        <div class="tester-option slant">
+                          <label  class="mono-small">Slant<span class="slant-output">0</span></label>
+                        <input name="slant" type='range' value=0 min=0 max=1 step=0.01>
+                      </div>
+                      <div class="tester-option line-height">
+                        <label class="mono-small">Line Height<span class="line-height-output">1.5</span></label>
+                        <input  name="line-height" type='range' value=1.5 min=0.75 max=1.5 step=0.05>
+                      </div>
+                        <div class="tester-option option-body letter-spacing">
+                          <label class="mono-small">Letter Spacing<span class="letter-spacing-output">0</span></label>
+                        <input name="letter-spacing" type='range' value=0 min=0 max=0.15 step=0.01>
+                      </div>
+                      <div class="tester-option">
+                        <select class="select-css custom-select tester-select">
+                          <option selected="selected">Extra-Light</option>
+                          <option>Extra-Light Italic</option>
+                          <option>Light</option>
+                          <option>Light Italic</option>
+                          <option>Regular</option>
+                          <option>Regular Italic</option>
+                          <option>Medium</option>
+                          <option>Medium Italic</option>
+                          <option>Semi-Bold</option>
+                          <option>Semi-Bold Italic</option>
+                          <option>Bold</option>
+                          <option>Bold Italic</option>
+                          <option>Black</option>
+                          <option>Black Italic</option>
+                        </select>
+                      </div>
+
+                </div>
+
+                <div class="tester-type" contenteditable="true" spellcheck="false">
+                  Try Intro, you'll be glad you did
+                </div>
+
+              </div>
+
             </section>
 
-            <section class="info">
+            <section class="main info">
               info
             </section>
 
-            <section class="buy">
+            <section class="main buy">
               buy
             </section>
     </section>
 
       </main>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="scripts/index.js"></script>
       <script src="scripts/typefaces.js"></script>
       <script src="scripts/intro.js"></script>
